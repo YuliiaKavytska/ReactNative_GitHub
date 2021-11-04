@@ -17,12 +17,13 @@
 </p>
 
 ## Screens
-
-<img src="https://i.ibb.co/qsQ5zj4/9-B998-F12-4907-4-B5-D-BEE4-2-B18-FC3779-CA.png" alt="Splash screen" width="200"/>
-<img src="https://i.ibb.co/QmVJhHs/354-BB29-C-B0-A5-443-F-B35-E-D15-D80-ED7-B1-E.png" alt="Home page" width="200"/>
-<img src="https://i.ibb.co/DQmWtPT/6-D88-E8-F6-3525-4-E51-BCEE-BD7-DB41-A8-F71.png" alt="User account info page" width="200"/>
-<img src="https://i.ibb.co/WycjW2m/C7439-E2-B-BBDB-4-F27-AB61-CC258-E2419-A6.png" alt="User's view page" width="200"/>
-<img src="https://i.ibb.co/TqYxVzp/BA6-AC6-A6-D7-B1-44-A7-9-F00-6-DC71217-E9-D5.png" alt="Modal for creating a new repository" width="200"/>
+<p align="center">
+    <img src="https://i.ibb.co/qsQ5zj4/9-B998-F12-4907-4-B5-D-BEE4-2-B18-FC3779-CA.png" alt="Splash screen" width="200"/>
+    <img src="https://i.ibb.co/QmVJhHs/354-BB29-C-B0-A5-443-F-B35-E-D15-D80-ED7-B1-E.png" alt="Home page" width="200"/>
+    <img src="https://i.ibb.co/DQmWtPT/6-D88-E8-F6-3525-4-E51-BCEE-BD7-DB41-A8-F71.png" alt="User account info page" width="200"/>
+    <img src="https://i.ibb.co/WycjW2m/C7439-E2-B-BBDB-4-F27-AB61-CC258-E2419-A6.png" alt="User's view page" width="200"/>
+    <img src="https://i.ibb.co/TqYxVzp/BA6-AC6-A6-D7-B1-44-A7-9-F00-6-DC71217-E9-D5.png" alt="Modal for creating a new repository" width="200"/>
+</p>
 
 ## About the aplication
 
@@ -35,6 +36,8 @@ There are last 10 repositories below the list of users. If we want to create a n
 The second page displays the user's account info.
 For more details view the example usage in the gif or clone the repository and run the app.
 
+
+![](https://i.ibb.co/xj7WPrb/9-DD531-B5-A052-4-AF7-B3-B1-C0-AB6-A147-CC3.gif | width=100)
 <img src="https://i.ibb.co/xj7WPrb/9-DD531-B5-A052-4-AF7-B3-B1-C0-AB6-A147-CC3.gif" alt="Example of usage (part 1)" width="180"/>
 <img src="https://i.ibb.co/7JpMmF5/0-AAB4-ADE-BF52-4736-B7-C1-4723039-ABCED.gif" alt="Example of usage (part 2)" width="180"/>
 <img src="https://i.ibb.co/y4gNc7F/5882-C252-D641-4-C30-A132-928-D41-EE3827.gif" alt="Example of usage (part 3)" width="180"/>
