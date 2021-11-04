@@ -13,7 +13,7 @@
   <a href="#about-the-aplication">About the application</a> •
   <a href="#how-to-use">How to use</a> •
   <a href="#credits">Credits</a> •
-  <a href="#related">Related</a> •
+  <a href="#you-may-also-like">Related</a>
 </p>
 
 ## Screens
