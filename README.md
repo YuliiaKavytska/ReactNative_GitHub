@@ -9,9 +9,9 @@
 <h4 align="center">A minimal application for managing and searching info from GitHub</h4>
 
 <p align="center">
-  <a href="#screens">Key Features</a> •
-  <a href="#about-the-aplication">How To Use</a> •
-  <a href="#how-to-use">Download</a> •
+  <a href="#screens">Screens</a> •
+  <a href="#about-the-aplication">About the application</a> •
+  <a href="#how-to-use">How to use</a> •
   <a href="#credits">Credits</a> •
   <a href="#related">Related</a> •
 </p>
@@ -43,9 +43,9 @@ The second page displays the user's account info.
 For more details view the example usage in the gif or clone the repository and run the app.
 
 <p align='center'>
-    [<img src="/demo/1.gif" width="200"/>](/demo/1.gif)
-    [<img src="/demo/2.gif" width="200"/>](/demo/2.gif)
-    [<img src="/demo/3.gif" width="200"/>](/demo/3.gif)
+    <img src="/demo/1.gif" width="200"/>
+    <img src="/demo/2.gif" width="200"/>
+    <img src="/demo/3.gif" width="200"/>
 </p>
 
 ## How To Use
