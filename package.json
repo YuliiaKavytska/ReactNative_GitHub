@@ -22,7 +22,6 @@
     "expo-font": "^10.0.3",
     "expo-linear-gradient": "^10.0.3",
     "expo-status-bar": "~1.1.0",
-    "formik": "^2.2.9",
     "fs": "^0.0.1-security",
     "graphql": "^15.7.2",
     "graphql-tag": "^2.12.5",

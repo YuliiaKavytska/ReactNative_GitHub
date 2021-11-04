@@ -1,13 +1,13 @@
 import React, { useEffect } from 'react'
 import { FormProvider, useForm } from 'react-hook-form'
 import { Button, Modal, SafeAreaView, StyleSheet, Text, View } from 'react-native'
+import { yupResolver } from '@hookform/resolvers/yup'
+import * as yup from 'yup'
 
 import { gSt } from '../../helpers/styles'
 import Input from '../../components/FormComponents/SimpleField/FieldContainer'
 import Select from '../../components/FormComponents/Select/Form/FormSelectContainer'
 import { repoTypes } from '../../helpers/defaultData'
-import { yupResolver } from '@hookform/resolvers/yup'
-import * as yup from 'yup'
 
 const initialValues = {
   name: '',

@@ -6,11 +6,16 @@ export const useOpenUrl = (url) => {
 
   useEffect(() => {
     const checkLoading = async () => {
-      const canOpenURL = await Linking.canOpenURL(url)
-      active !== canOpenURL && setActive(canOpenURL)
+      try {
+        const canOpenURL = await Linking.canOpenURL(url)
+        active !== canOpenURL && setActive(canOpenURL)
+      } catch (err) {
+        console.log(err)
+        console.error('Error of checking of loading url')
+      }
     }
 
-    checkLoading()
+    url && checkLoading()
   }, [url])
 
   return active

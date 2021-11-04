@@ -7,6 +7,7 @@ export const GET_REPO = gql(`
       repositories(last: 10) {
         totalCount
         nodes {
+          id
           name
           primaryLanguage {
             name
