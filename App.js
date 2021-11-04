@@ -4,12 +4,13 @@ import * as Font from 'expo-font'
 import AppLoading from 'expo-app-loading'
 import { NavigationContainer } from '@react-navigation/native'
 
-import Header from './src/Navigation/Header'
+import Header from './src/components/Navigation/Header'
 import { gSt } from './src/helpers/styles'
-import Navigate from './src/Navigation/Navigate'
-import Footer from './src/Navigation/Footer'
+import Navigate from './src/components/Navigation/Navigate'
+import Footer from './src/components/Navigation/Footer'
 import { ApolloProvider } from '@apollo/client'
 import { client, createApolloClient } from './src/apolloClient'
+import Application from './src/pages/Application'
 
 const robotoFont = () => Font.loadAsync({
   'rb-light': require('./assets/fonts/Roboto-Light.ttf'),
@@ -35,10 +36,7 @@ export default function App() {
   return (
     <ApolloProvider client={client}>
       <NavigationContainer>
-        <View style={gSt.app}>
-          <Navigate />
-          <Footer />
-        </View>
+        <Application />
       </NavigationContainer>
     </ApolloProvider>
   );

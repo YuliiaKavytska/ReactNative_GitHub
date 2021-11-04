@@ -1,9 +1,10 @@
 import React from 'react'
 import { useFormContext } from 'react-hook-form'
-import SimpleField from '../SimpleField'
+
+import SimpleField from './SimpleField'
 
 const FieldContainer = (props) => {
-const {name} = props
+  const {name} = props
   const formContext = useFormContext();
 
   if (!formContext || !name) {
@@ -12,8 +13,10 @@ const {name} = props
     return null
   }
 
+  const { formState: { submitCount } } = formContext
+
   return (
-    <SimpleField {...props} />
+    <SimpleField {...props} submited={!!submitCount}  />
   )
 }
 

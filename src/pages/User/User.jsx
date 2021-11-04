@@ -1,14 +1,24 @@
 import React from 'react'
 
-import { StyleSheet, Image, Text, View } from 'react-native'
+import { StyleSheet, Image, Text, View, TouchableWithoutFeedback, Linking } from 'react-native'
+import { useOpenUrl } from '../../helpers/hooks/useOpenUrl'
+import { gSt } from '../../helpers/styles'
 
 const User = ({route: {params: user}}) => {
+  const canOpen = useOpenUrl(user?.url)
+
+  const onOpenLink = async () => {
+    canOpen && await Linking.openURL(user.url)
+  }
+
   return (
     <View style={s.postContainer}>
       <Image source={{ uri: user.avatarUrl }} style={s.postImg}  />
-      <Text style={s.title}>{user.name}</Text>
+      <TouchableWithoutFeedback onPress={onOpenLink}>
+        <Text style={[gSt.linkStyle, s.title]}>{user.name}</Text>
+      </TouchableWithoutFeedback>
       <Text style={s.subtitle}>{user.login}</Text>
-      {user.bio && <Text style={s.text}>{user.bio}</Text>}
+      {Boolean(user.bio) && <Text style={s.text}>{user.bio}</Text>}
     </View>
   )
 }

@@ -1,15 +1,13 @@
-import React, { useState } from 'react'
-
+import React from 'react'
 import { StyleSheet, TouchableOpacity, View } from 'react-native'
-import EntypoIcon from 'react-native-vector-icons/Entypo'
-import AntDesignIcon from 'react-native-vector-icons/AntDesign'
-import { useNavigation } from '@react-navigation/native';
-import { gSt } from '../helpers/styles'
+import { useNavigation } from '@react-navigation/native'
 import VectorIcon from 'react-native-vector-icons/Ionicons'
-import NewPostModal from '../Home/NewPostModal'
+import EntypoIcon from 'react-native-vector-icons/Entypo'
+import MatIcon from 'react-native-vector-icons/MaterialCommunityIcons'
 
-const Footer = () => {
-  const [isOpenModal, setIsOpenModal] = useState(false)
+import { gSt } from '../../helpers/styles'
+
+const Footer = ({ setIsOpenModal }) => {
   const navigation = useNavigation()
 
   const onPress = (page) => () => {
@@ -19,17 +17,16 @@ const Footer = () => {
   return (
     <View style={[s.footer, gSt.shadow]}>
       <TouchableOpacity onPress={onPress('Home')} style={s.coloumn}>
-        <EntypoIcon name='home' size={30} color="#132C33" />
+        <EntypoIcon name='home' size={30} color='#132C33' />
       </TouchableOpacity>
-      <TouchableOpacity onPress={onPress('Contacts')} style={s.coloumn}>
-        <AntDesignIcon name='contacts' size={30} color="#132C33" />
+      <TouchableOpacity onPress={onPress('Account')} style={s.coloumn}>
+        <MatIcon name='account' size={30} color='#132C33' />
       </TouchableOpacity>
       <TouchableOpacity onPress={() => setIsOpenModal(true)} style={[s.addPost, gSt.shadow, {
         transform: [{ translateX: -27 }]
-      }]} >
-        <VectorIcon name='ios-add-circle' size={65} color="green" />
+      }]}>
+        <VectorIcon name='ios-add-circle' size={65} color='green' />
       </TouchableOpacity>
-      <NewPostModal isOpenModal={isOpenModal} setIsOpenModal={setIsOpenModal} />
     </View>
   )
 }
@@ -51,6 +48,6 @@ const s = StyleSheet.create({
   addPost: {
     position: 'absolute',
     top: -34,
-    left: '50%',
+    left: '50%'
   }
 })

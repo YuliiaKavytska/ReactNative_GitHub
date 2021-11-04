@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { Image, Text, TouchableOpacity, View, StyleSheet } from 'react-native'
-import { gSt } from '../helpers/styles'
+import { gSt } from '../../helpers/styles'
 import { LinearGradient } from 'expo-linear-gradient'
 import { useNavigation } from '@react-navigation/native'
 

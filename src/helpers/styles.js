@@ -44,10 +44,23 @@ export const gSt = StyleSheet.create({
     paddingHorizontal: 15,
     paddingVertical: 8
   },
+  invalidInput: {
+    borderColor: 'red',
+  },
   errorMsg: {
     color: '#ff0038',
     textAlign: 'center',
     paddingHorizontal: 10,
     paddingVertical: 8
   },
+  inputError: {
+    paddingLeft: 15,
+    color: '#ff0038',
+  },
+  linkStyle: {
+    color: '#0375ff',
+    textDecorationLine: "underline",
+    textDecorationStyle: "solid",
+    textDecorationColor: "#0375ff"
+  }
 })

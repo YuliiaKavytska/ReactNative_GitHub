@@ -1,8 +1,8 @@
 import { gql } from '@apollo/client'
 
 export const GET_USERS = gql(`
-  query getUsers($searchText: String!) {
-    search(type: USER, query: $searchText, first: 10) {
+  query getUsers($searchText: String!, $after: String) {
+    search(type: USER, query: $searchText, first: 10, after: $after) {
       userCount
       nodes {
         ... on User {
@@ -10,8 +10,13 @@ export const GET_USERS = gql(`
           avatarUrl
           login
           name
-          bio
+          bio,
+          url
         }
+      }
+      pageInfo {
+        endCursor
+        hasNextPage
       }
     }
   }

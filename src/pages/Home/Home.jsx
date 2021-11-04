@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { View } from 'react-native'
-import { gSt } from '../helpers/styles'
+import { gSt } from '../../helpers/styles'
 import PopularUsers from './PopularUsers'
 import MyRepos from './MyRepos'
 

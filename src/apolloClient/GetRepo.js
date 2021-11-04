@@ -2,7 +2,7 @@ import {USERNAME} from '@env';
 import { gql } from '@apollo/client'
 
 export const GET_REPO = gql(`
-  query MyQuery {
+  query getRepos {
     user(login: "${USERNAME}") {
       repositories(last: 10) {
         totalCount

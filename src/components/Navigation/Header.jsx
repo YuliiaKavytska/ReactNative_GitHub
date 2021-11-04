@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'
-import { gSt } from '../helpers/styles'
+import { gSt } from '../../helpers/styles'
 import { useNavigation } from '@react-navigation/native'
 import Icon from 'react-native-vector-icons/Ionicons';
 

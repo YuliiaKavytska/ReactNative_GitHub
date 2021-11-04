@@ -1,36 +1,22 @@
 import React, { useEffect, useState } from 'react'
 import { Linking, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 
-import { gSt } from '../helpers/styles'
+import { gSt } from '../../helpers/styles'
+import { useOpenUrl } from '../../helpers/hooks/useOpenUrl'
 
 const RepoItem = ({ item }) => {
-  const [active, setActive] = useState(true)
-  const [loading, setLoading] = useState(true)
-
-  useEffect(() => {
-    const checkLoading = async () => {
-      const canOpenURL = await Linking.canOpenURL(item.url)
-      active !== canOpenURL && setActive(canOpenURL)
-      setLoading(false)
-    }
-
-    checkLoading()
-  }, [])
+  const canOpen = useOpenUrl(item.url)
 
   const onOpenLink = async () => {
-    active && await Linking.openURL(item.url)
-  }
-
-  if(loading) {
-    return null
+    canOpen && await Linking.openURL(item.url)
   }
 
   return (
     <View style={[s.repoItem, gSt.shadow]}>
       <Text style={s.repoTitle}>{item.name}</Text>
-      <Text style={s.mainLang}>{item.primaryLanguage.name}</Text>
+      {item?.primaryLanguage?.name && <Text style={s.mainLang}>{item?.primaryLanguage?.name}</Text>}
       <TouchableOpacity onPress={onOpenLink}>
-        <Text style={active ? s.activeLink : s.disableLink}>View repository</Text>
+        <Text style={canOpen ? [s.activeLink, gSt.linkStyle] : s.disableLink}>View repository</Text>
       </TouchableOpacity>
     </View>
   )
@@ -56,7 +42,6 @@ const s = StyleSheet.create({
     marginBottom: 10
   },
   activeLink: {
-    color: '#0375ff',
     fontSize: 14
   },
   disableLink: {
