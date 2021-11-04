@@ -10,23 +10,7 @@ export const createApolloClient = () => {
     }
   })
 
-  const cache = new InMemoryCache({
-    typePolicies: {
-      Query: {
-        fields: {
-          search: {
-            merge: true
-          },
-          nodes: {
-            merge: true
-          },
-          pageInfo: {
-            merge: true
-          }
-        }
-      }
-    }
-  })
+  const cache = new InMemoryCache()
 
   const client = new ApolloClient({
     cache,

@@ -42,7 +42,6 @@ The second page displays the user's account info.
 
 For more details view the example usage in the gif or clone the repository and run the app.
 
-![Farmers Market Finder Demo](demo/1.gif)
 <p align='center'>
     [<img src="/demo/1.gif" width="200"/>](/demo/1.gif)
     [<img src="/demo/2.gif" width="200"/>](/demo/2.gif)
