@@ -28,17 +28,24 @@
 ## About the aplication
 
 The app uses expo cli for development.
+
 There are two main screens we can visit from the footer.
+
 The firs page contains a select for searching users from (Kyiv, Ukraine, Europe, USA and Asia).
+
 List is infinite and load the data after reach the last element. Every card is toucheble and links to the user page with main info.
+
 All links redirect to GitHub.
+
 There are last 10 repositories below the list of users. If we want to create a new one, there is a special button in the footer that calls the modal that contains a form with required info for creating. Each field have a validation. After creating a new repository, the list of repositories updates.
 The second page displays the user's account info.
+
 For more details view the example usage in the gif or clone the repository and run the app.
 
-
-![](https://i.ibb.co/xj7WPrb/9-DD531-B5-A052-4-AF7-B3-B1-C0-AB6-A147-CC3.gif | width=100)
-<img src="https://i.ibb.co/xj7WPrb/9-DD531-B5-A052-4-AF7-B3-B1-C0-AB6-A147-CC3.gif" alt="Example of usage (part 1)" width="180"/>
+![Farmers Market Finder Demo](demo/1.gif)
+[<img src="/demo/1.gif" width="250"/>](/demo/1.gif)
+![200]<img src="/demo/1.gif" width="200">
+<img src="/demo/1.gif" alt="Example of usage (part 1)" width="180"/>
 <img src="https://i.ibb.co/7JpMmF5/0-AAB4-ADE-BF52-4736-B7-C1-4723039-ABCED.gif" alt="Example of usage (part 2)" width="180"/>
 <img src="https://i.ibb.co/y4gNc7F/5882-C252-D641-4-C30-A132-928-D41-EE3827.gif" alt="Example of usage (part 3)" width="180"/>
 
